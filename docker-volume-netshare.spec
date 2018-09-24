@@ -1,5 +1,5 @@
 %global import_path     github.com/ContainX/docker-volume-netshare
-%global commit          764b18ec6816085deb8edcc5c594e02cdd805cb3            
+%global commit          c90abe398b9628db67dadfc54bc6b5d6f17168d9            
 %global shortcommit     %(c=%{commit}; echo ${c:0:7})
 
 %global _dwz_low_mem_die_limit 0
@@ -13,14 +13,14 @@
 %endif
 
 Name:       docker-volume-netshare
-Version:	0.34
-Release:	0.2.git%{shortcommit}%{?dist}
+Version:	0.35
+Release:	0.3.git%{shortcommit}%{?dist}
 Summary:	Mount NFS v3/4, AWS EFS or CIFS inside your docker containers.
 
 Group:		Unspecified
 License:	ASL 2.0
 URL:		https://github.com/ContainX/docker-volume-netshare/
-Source0:	https://github.com/ContainX/docker-volume-netshare/archive/v0.34.tar.gz
+Source0:	https://codeload.github.com/ContainX/docker-volume-netshare/tar.gz/master
 
 %if 0%{?use_systemd}
 %{?systemd_requires}
