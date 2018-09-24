@@ -13,7 +13,7 @@
 %endif
 
 Name:       docker-volume-netshare
-Version:	0.35
+Version:	master
 Release:	0.3.git%{shortcommit}%{?dist}
 Summary:	Mount NFS v3/4, AWS EFS or CIFS inside your docker containers.
 
